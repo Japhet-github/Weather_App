@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to Google Fonts and CSS file -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/Martz90-Hex-Weather.512.png">
+    
+    <!-- Title of the page -->
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!-- Main container for the app -->
+    <div class="container">
+        <!-- Search box for location input and search button -->
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your location">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <!-- Display current date and time -->
+        <div class="date-time"></div>
+
+        <!-- Display error message if location is invalid or not found -->
+        <div class="not-found">
+            <img src="images/404.png">
+            <p class="error-message">Oops! Invalid.</p>
+        </div>
+
+        <!-- DISPLAY WEATHER INFORMATION -->
+        <div class="weather-box">
+            <img src="" alt="weather icons">
+            <p class="temperature"></p>
+            <p class="description"></p>
+            <p class="temperature-low"></p>
+            <p class="temperature-high"></p>
+        </div>
+
+        <!-- Display additional weather details -->
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+            <!--
+            <div class="temperature-low">
+                <i class="fa-solid fa-thermometer-0"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Low Temp.</p>
+                </div>
+            </div>
+            <div class="temperature-high">
+                <i class="fa-solid fa-thermometer-3"></i>
+                <div class="text">
+                    <span></span>
+                    <p>High Temp.</p>
+                </div> -->
+        </div> <!-- END: additional weather details -->
+
+    </div>
+
+    <!-- Script tags for Font Awesome icons and JavaScript file -->
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
